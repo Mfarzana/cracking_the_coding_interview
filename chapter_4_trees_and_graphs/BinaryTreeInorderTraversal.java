@@ -43,6 +43,18 @@ public class BinaryTreeInorderTraversal {
         //  solution 3 without recursion
       public static void solution3(TreeNode node){
             Stack<TreeNode> stack=new Stack();
+            TreeNode curr=node;
+            stack.push(curr);
+            while(!stack.isEmpty()){
+                    if(curr.left!=null){
+           //                           stack.push(curr.left);l
+        //                              curr=curr.left;
+                    }else{
+                        
+                        System.out.print("s3  "+stack.pop());
+                        curr=curr.right;
+                    }
+            }
             
       }
      
@@ -59,10 +71,12 @@ public class BinaryTreeInorderTraversal {
              System.out.println();
             BinaryTreeInorderTraversal.solution2(node);
             
+               System.out.println();
+            BinaryTreeInorderTraversal.solution3(node);
+            
         }
-}
-
-class TreeNode{
+        
+        static class TreeNode{
                 int val;
                 TreeNode left;
                 TreeNode right;
@@ -73,3 +87,8 @@ class TreeNode{
                     this.right=null;
                 }
     }
+
+
+}
+
+  
