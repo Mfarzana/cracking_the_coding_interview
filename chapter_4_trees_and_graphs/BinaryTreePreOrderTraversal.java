@@ -5,6 +5,10 @@
  */
 package data_structure;
 
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
 /**
  *
  * @author Farzana
@@ -35,6 +39,25 @@ public class BinaryTreePreOrderTraversal {
                             
             
             }
+            // without recursion
+            public static void preOrderSolution(TreeNode node){
+                Stack<TreeNode> stack=new Stack<>();
+                stack.add(node);
+                TreeNode curr=null;;
+                while(!stack.isEmpty()){
+                    curr=stack.pop();
+                    System.out.print(" "+curr.val+" ");
+                    
+                    if(curr.right!=null){
+                        stack.push(curr.right);
+                    }
+                    if(curr.left!=null){
+                        stack.push(curr.left);
+                    }
+                   
+                    
+                }
+            }
 
             public static void main(String args[]){
 
@@ -45,7 +68,10 @@ public class BinaryTreePreOrderTraversal {
                         node.left.right=new TreeNode(5);
 
                         BinaryTreePreOrderTraversal.preorderTraversa(node);
+                         System.out.println(" wihtout recursion ");
                          System.out.println();
+                         BinaryTreePreOrderTraversal.preOrderSolution(node);
+      
                       
             }
             
