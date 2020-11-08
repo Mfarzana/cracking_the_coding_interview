@@ -46,13 +46,17 @@ public class BinaryTreeInorderTraversal {
             TreeNode curr=node;
             stack.push(curr);
             while(!stack.isEmpty()){
+                
                     if(curr.left!=null){
-           //                           stack.push(curr.left);l
-        //                              curr=curr.left;
+                                   stack.push(curr.left);
+                                    curr=curr.left;
                     }else{
-                        
-                        System.out.print("s3  "+stack.pop());
-                        curr=curr.right;
+                            curr =stack.pop();
+                            System.out.print("  "+curr.val+" ");
+                            if(curr.right!=null){
+                                       stack.push(curr.right);
+                                        curr=curr.right;
+                             }
                     }
             }
             
