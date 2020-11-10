@@ -13,6 +13,7 @@ Every level of the tree is fully filled **except for the perhaps the last level*
 A full binary tree is a binary tree in which every **node has eihter zero or two children**.
 ### Perfect Binary Trees
 A perfect binary tress is one that is **both full and complete**.
+
 ![binary tree types](https://github.com/Mfarzana/cracking_the_coding_interview/blob/main/images/binarytrees.png)
 
 
