@@ -16,4 +16,12 @@ A perfect binary tress is one that is **both full and complete**.
 
 ![binary tree types](https://github.com/Mfarzana/cracking_the_coding_interview/blob/main/images/binarytrees.png)
 
+### Depth First Search (DFS)
+**DFS is often preferred if we want to visit every node** in the tree or graph. DFS has three variants
+* Pre-Order Traversal
+* In-Order Traversal
+* Post-Order Traversal
+### Breadth First Search (BFS)
+**BFS is better for find shortest path or any path**. BFS has one variant
+* Level Order Traversal
 
