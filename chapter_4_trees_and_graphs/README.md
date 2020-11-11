@@ -25,3 +25,5 @@ A perfect binary tress is one that is **both full and complete**.
 **BFS is better for find shortest path or any path**. BFS has one variant
 * Level Order Traversal
 
+![BFS DFS](https://github.com/Mfarzana/cracking_the_coding_interview/blob/main/images/BFS-and-DFS.jpg)
+
