@@ -27,3 +27,8 @@ A perfect binary tress is one that is **both full and complete**.
 
 ![BFS DFS](https://github.com/Mfarzana/cracking_the_coding_interview/blob/main/images/BFS-and-DFS.jpg)
 
+### Minimal Tree
+**Convert sorted array to binary search tree with minimal height**
+* Insert Middle element as the root
+* Insert left subarray as left subtree
+* Insert right subarray as right subtree
