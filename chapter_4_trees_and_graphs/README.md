@@ -32,3 +32,5 @@ A perfect binary tress is one that is **both full and complete**.
 * Insert Middle element as the root
 * Insert left subarray as left subtree
 * Insert right subarray as right subtree
+### Check Balanced
+Check Balanced tree is defined to be a tree such that the **heighs** of the **two subtrees of any node never differ by more than one**. 
